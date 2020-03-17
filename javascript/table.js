@@ -24,13 +24,13 @@ var scoreArray = [[]];
             //tableitems  
             if (i > 0)
                 {
-            tableitems.push(<tr><td>{i}</td><td>{scoreArray[player][0]}</td><td class="scoreText">{scoreArray[player][1]}</td></tr>)
+            tableitems.push(<tr><td class="tableText">{i}</td><td class="tableText">{scoreArray[player][0]}</td><td class="scoreText">{scoreArray[player][1]}</td></tr>)
                 }
             i++;
         }
         return (
         <div>
-        <table class="table">{tableitems}</table>
+        <table class="scoreTable">{tableitems}</table>
         </div>
       );
             
